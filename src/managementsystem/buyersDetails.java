@@ -5,6 +5,8 @@
 package managementsystem;
 import javax.swing.JTable;
 import java.sql.*;
+import javax.swing.JOptionPane;
+import net.proteanit.sql.DbUtils;
 /**
  *
  * @author mchai
@@ -148,7 +150,9 @@ public class buyersDetails extends javax.swing.JFrame {
 
         }
         catch(Exception e)
-        {}
+        {
+        JOptionPane.showMessageDialog(null, e);
+        }
     }//GEN-LAST:event_formComponentShown
 
     /**
